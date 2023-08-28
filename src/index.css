@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #242424;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.change-btn {
+  height: 50px;
+  width: 70px;
+}
+.translate-btn {
+  width: 100%;
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* Container Alanı */
+.container {
+  width: 80vw;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  color: white;
+}
+textarea {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+textarea:disabled {
+  background-color: rgba(201, 196, 196, 0.608);
+  color: #1a1a1a;
+}
+.right,
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
